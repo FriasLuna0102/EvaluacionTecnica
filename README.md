@@ -1,3 +1,6 @@
+## Comandos utilizados para sqlite3:
+
+
 CREATE TABLE usuario (
     id INTEGER PRIMARY KEY,
     nombre TEXT NOT NULL,
@@ -6,7 +9,7 @@ CREATE TABLE usuario (
 );
 
 
-Para insertar:
+### Para insertar:
 
 INSERT INTO usuario (id, nombre, email, fecha_creacion) VALUES
 (1, 'Juan Pérez', 'juan.perez@gmail.com', '2024-07-01'),
@@ -15,15 +18,15 @@ INSERT INTO usuario (id, nombre, email, fecha_creacion) VALUES
 (4, 'Ana Fernández', 'ana.fernandez@hotmail.com', '2024-07-04'),
 (5, 'Luis Rodríguez', 'luis.rodriguez@gmail.com', '2024-07-05');
 
-Para consulta a los correos con @gmail:
+### Para consulta a los correos con @gmail:
 
 SELECT * FROM usuario WHERE email LIKE '%@gmail.com';
 
 
-Actualizar:
+### Actualizar:
 
 sqlite> UPDATE usuario SET nombre = 'María Maria' WHERE id = 2;
 
-Delete:
+### Delete:
 
 sqlite> DELETE FROM usuario WHERE id = 4;
