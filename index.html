@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Sencilla</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Mi Página Web</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Sección 1</a></li>
+                    <li><a href="#">Sección 2</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section1" id="seccion1">
+            <div class="container">
+                <h2 id="carouselHeading">Título 1</h2>
+                <p id="carouselText">Texto de ejemplo para la sección 1.</p>
+                <img id="carouselImage" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">         
+            </div>
+        </section>
+        <button id="toggleSectionButton1">Mostrar/Ocultar Sección 1</button>
+
+        <section class="section2" id="seccion2">
+            <div class="container">
+                <h2>Sección 2</h2>
+                <p>Texto de ejemplo para la sección 2.</p>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="Imagen 2">
+            </div>
+        </section>
+        <button id="toggleSectionButton2">Mostrar/Ocultar Sección 2</button>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Contacto: correo@example.com | Teléfono: 123-456-7890</p>
+        </div>
+    </footer>
+
+    <footer>
+        <h2>Formulario</h2>
+        <div class="container">
+            <form id="contactForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <br>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                <br>
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </footer>
+
+
+
+    <script src="/javascript/js.js"></script> 
+
+
+</body>
+</html>

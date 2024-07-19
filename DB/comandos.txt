@@ -1,0 +1,9 @@
+CREATE TABLE usuario (
+    id INTEGER PRIMARY KEY,
+    nombre TEXT NOT NULL,
+    email TEXT NOT NULL,
+    fecha_creacion DATE NOT NULL
+);
+
+
+
